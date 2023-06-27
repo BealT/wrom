@@ -22,6 +22,6 @@ $newIPs = $response.Content | ConvertFrom-Json
 # Ici on va lancer la commande psexec sur chacune des nouvelles IPs, faut encore voir comment ça fonctionne
 $newIPs | ForEach-Object {
 # Remplir cette partie avec psexec blabla
-psexec -s \$_ Powershell -ExecutionPolicy Bypass -File \10.10.3.30t\scripts\monscript.ps1
+psexec -s \$_ Powershell -ExecutionPolicy Bypass -File \10.10.3.30\scripts\script.ps1
     }
 }
